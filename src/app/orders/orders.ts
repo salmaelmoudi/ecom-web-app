@@ -5,8 +5,8 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-orders',
   standalone: false,
-  templateUrl: './orders.component.html',
-  styleUrl: './orders.component.css'
+  templateUrl: './orders.html',
+  styleUrl: './orders.css'
 })
 export class OrdersComponent implements OnInit {
   orders:any;

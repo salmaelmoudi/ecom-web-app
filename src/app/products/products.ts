@@ -4,8 +4,8 @@ import {HttpClient} from '@angular/common/http';
 @Component({
   selector: 'app-products',
   standalone: false,
-  templateUrl: './products.component.html',
-  styleUrl: './products.component.css'
+  templateUrl: './products.html',
+  styleUrl: './products.css'
 })
 export class ProductsComponent implements OnInit{
   products:any;

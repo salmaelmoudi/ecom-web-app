@@ -1,31 +1,30 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+
 import { ProductsComponent } from './products/products';
-// @ts-ignore
-import {HttpClientModule} from '@angular/common/module.d';
-import { Customers } from './customers/customers';
-import { Orders } from './orders/orders';
-import { OrderDetails } from './order-details/order-details';
+import { CustomersComponent } from './customers/customers';
+import { OrdersComponent } from './orders/orders';
+import { OrderDetailsComponent } from './order-details/order-details';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     App,
-    Products,
-    Customers,
-    Orders,
-    OrderDetails
+    ProductsComponent,
+    CustomersComponent,
+    OrdersComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners()
-  ],
+  providers: [],
   bootstrap: [App]
 })
 export class AppModule { }
